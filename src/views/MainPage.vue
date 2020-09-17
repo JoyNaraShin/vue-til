@@ -1,6 +1,6 @@
 <template>
   <div>
-    Page is not found
+    <h1>Main Page</h1>
   </div>
 </template>
 
