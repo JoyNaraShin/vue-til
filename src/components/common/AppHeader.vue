@@ -8,7 +8,7 @@
     </div>
     <div class="navigations">
       <template v-if="isUserLogin">
-        <span>{{ $store.state.username }}</span>
+        <!-- <span>{{ $store.state.username }}</span> -->
         <!-- 앵커 태그의 기본 동작 막기  -->
         <a href="javascript:;" @click="logoutUser">Logout</a>
       </template>
