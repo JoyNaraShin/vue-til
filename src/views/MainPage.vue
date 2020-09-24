@@ -28,7 +28,6 @@ export default {
   },
   methods: {
     async fetchData() {
-      //comiit
       const { data } = await fetchPost();
       this.postItems = data.posts;
       console.log(data);
