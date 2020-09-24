@@ -32,6 +32,9 @@ export default {
       this.postItems = data.posts;
       console.log(data);
     },
+    commitTest() {
+      console.log('commit');
+    },
   },
 };
 </script>
