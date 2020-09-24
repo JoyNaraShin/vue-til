@@ -1,4 +1,8 @@
-<template> <div></div></template>
+<template>
+  <div>
+    <p>!!</p>
+  </div>
+</template>
 
 <script>
 export default {};
