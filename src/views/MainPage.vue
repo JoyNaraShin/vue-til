@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { fetchPost } from '@/api/posts';
+import { fetchPosts } from '@/api/posts';
 import PostListItem from '@/components/posts/PostListItem';
 import LoadingSpinner from '@/components/common/LoadingSpinner.vue';
 export default {
@@ -37,7 +37,7 @@ export default {
   methods: {
     async fetchData() {
       this.isLoading = true;
-      const { data } = await fetchPost();
+      const { data } = await fetchPosts();
       this.isLoading = false;
       this.postItems = data.posts;
     },

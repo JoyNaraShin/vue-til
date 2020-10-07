@@ -2,8 +2,13 @@
 import { posts } from './index';
 
 //* 학습 노트 조회 API
-function fetchPost() {
+function fetchPosts() {
   return posts.get('/');
+}
+
+//* 특정 학습 노트 조회 API
+function fetchPost(postId) {
+  return posts.get(postId);
 }
 
 //* 학습 노트 생성 API
@@ -16,4 +21,9 @@ function deletePost(postId) {
   return posts.delete(postId);
 }
 
-export { fetchPost, createPost, deletePost };
+//* 학습 노트 수정 API
+function edtiPost(postId, postData) {
+  return posts.put(postId, postData);
+}
+
+export { fetchPosts, fetchPost, createPost, deletePost, edtiPost };
